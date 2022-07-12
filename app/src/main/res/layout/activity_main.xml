@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#061175"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <EditText
+        android:id="@+id/emailtext"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/text_back"
+        android:drawableLeft="@drawable/ic_baseline_attach_email_24"
+        android:ems="10"
+        android:hint="Lütfen email adresinizi giriniz"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/passwordtext"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/text_back"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:ems="10"
+        android:hint="Lütfen şifrenizi giriniz"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:onClick="girisYap"
+        android:backgroundTint="#00BCD4"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:text="Giriş Yap" />
+
+    <Button
+        android:id="@+id/button2"
+        android:onClick="kayıtOl"
+        android:backgroundTint="#00BCD4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Kayıt Ol" />
+</LinearLayout>
